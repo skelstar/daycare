@@ -40,7 +40,7 @@
 });
 
 function populateHome() {
-    var homeContent = "/content/home.json";
+    var homeContent = "~/content/home.json";
     populateContent(homeContent);
 }
 function populateChooseUs() {
