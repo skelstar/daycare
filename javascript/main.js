@@ -40,26 +40,26 @@
 });
 
 function populateHome() {
-    var homeContent = "/daycare/content/home.json";
+    var homeContent = "/content/home.json";
     populateContent(homeContent);
 }
 function populateChooseUs() {
-    var chooseUsContent = "/daycare/content/choose-us.json"
+    var chooseUsContent = "/content/choose-us.json"
     populateContent(chooseUsContent);
 }
 function populateEnrollingAndFees() {
-    var enrollingAndFees = "/daycare/content/enrolling-and-fees.json"
+    var enrollingAndFees = "/content/enrolling-and-fees.json"
     populateContent(enrollingAndFees);
 }
 function populateContactUs()
 {
-    var contactUs = "/daycare/content/contact-us.json"
+    var contactUs = "/content/contact-us.json"
     populateContent(contactUs);
 }
 
 function populateContent(path) {
     var host = window.location.host;
-    var pageUrl = "https://" + host + path;
+    var pageUrl = "https://" + host + "/daycare" + path;
     var $content = $("#content");
     var $mainSection = $("#main");
     $content.remove();
